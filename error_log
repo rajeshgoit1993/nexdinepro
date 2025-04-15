@@ -1,0 +1,913 @@
+[01-Mar-2022 11:49:19 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.28. in /home/fog17074/public_html/kathination/vendor/composer/platform_check.php on line 24
+[01-Mar-2022 11:50:32 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1048576 bytes) in /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 364
+[01-Mar-2022 11:50:51 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1048576 bytes) in /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 364
+[10-Mar-2022 09:18:57 UTC] PHP Warning:  include(/home/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[10-Mar-2022 09:18:57 UTC] PHP Warning:  include(): Failed opening '/home/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[10-Mar-2022 09:18:57 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home/fog17074/public_html/kathination/index.php(21): require_once('/home/fog17074/...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home/fog17074/public_html/kathination/index.php(21): require_once('/home/fog17074/...')
+#10 {main}
+  thrown in /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-May-2022 13:14:52 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): Read of 162686 bytes failed with errno=12 Cannot allocate memory in /home/fog17074/public_html/kathination/vendor/composer/ClassLoader.php:571
+Stack trace:
+#0 /home/fog17074/public_html/kathination/vendor/composer/ClassLoader.php(571): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/fog17074/public_html/kathination/vendor/composer/ClassLoader.php(571): include()
+#2 /home/fog17074/public_html/kathination/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/fog17074/public_html/kathination/vendor/nesbot/carbon/src/Carbon/Carbon.php(510): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/fog17074/public_html/kathination/vendor/composer/ClassLoader.php(571): include('/home/fog17074/...')
+#5 /home/fog17074/public_html/kathination/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#6 /home/fog17074/public_html/kathination/vendor/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php(49): Composer\Autoload\ClassLoader->loadClass()
+#7 /home/fog17074/public_html/kathination/vendor/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php(29): Carbon\Laravel\ServiceProvider->updateLocale()
+#8 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Carbon\Laravel\ServiceProvider->boot()
+#9 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#10 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\Container\Util::unwrapIfClosure()
+#11 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\Container\BoundMethod::callBoundMethod()
+#12 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(653): Illuminate\Container\BoundMethod::call()
+#13 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(924): Illuminate\Container\Container->call()
+#14 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(905): Illuminate\Foundation\Application->bootProvider()
+#15 [internal function]: Illuminate\Foundation\Application->Illuminate\Foundation\{closure}()
+#16 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(906): array_walk()
+#17 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\Foundation\Application->boot()
+#18 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\BootProviders->bootstrap()
+#19 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(153): Illuminate\Foundation\Application->bootstrapWith()
+#20 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(137): Illuminate\Foundation\Http\Kernel->bootstrap()
+#21 /home/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#22 /home/fog17074/public_html/kathination/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#23 /home/fog17074/public_html/kathination/index.php(21): require_once('/home/fog17074/...')
+#24 {main} in /home/fog17074/public_html/kathination/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 510
+[24-May-2022 13:15:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/fog17074/public_html/kathination/vendor/composer/../laravel/framework/src/Illuminate/Support/helpers.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/fog17074/public_html/kathination/vendor/composer/autoload_real.php:78
+Stack trace:
+#0 /home/fog17074/public_html/kathination/vendor/composer/autoload_real.php(61): composerRequire24f3368e4c6a1dd70b17afb000512d32()
+#1 /home/fog17074/public_html/kathination/vendor/autoload.php(7): ComposerAutoloaderInit24f3368e4c6a1dd70b17afb000512d32::getLoader()
+#2 /home/fog17074/public_html/kathination/public/index.php(34): require('/home/fog17074/...')
+#3 /home/fog17074/public_html/kathination/index.php(21): require_once('/home/fog17074/...')
+#4 {main}
+  thrown in /home/fog17074/public_html/kathination/vendor/composer/autoload_real.php on line 78
+[24-May-2022 13:15:43 UTC] PHP Notice:  include(): Read of 4548 bytes failed with errno=12 Cannot allocate memory in /home/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[24-May-2022 13:15:43 UTC] PHP Warning:  include(): Failed opening '/home/fog17074/public_html/kathination/vendor/composer/../symfony/finder/Iterator/RecursiveDirectoryIterator.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[27-Sep-2022 09:13:48 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/fog17074/public_html/kathination/app/Http/Controllers/FanchiseRegistrationController.php on line 3
+[27-Sep-2022 09:14:06 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/fog17074/public_html/kathination/app/Http/Controllers/FanchiseRegistrationController.php on line 3
+[27-Sep-2022 09:14:39 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/fog17074/public_html/kathination/app/Http/Controllers/FanchiseRegistrationController.php on line 3
+[06-Oct-2022 06:26:04 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[06-Oct-2022 06:26:04 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[06-Oct-2022 06:26:04 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[30-Oct-2022 07:18:39 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[30-Oct-2022 07:18:39 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[30-Oct-2022 07:18:39 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[30-Oct-2022 07:18:47 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[30-Oct-2022 07:18:47 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[30-Oct-2022 07:18:47 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[30-Oct-2022 07:18:53 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[30-Oct-2022 07:18:53 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[30-Oct-2022 07:18:53 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[30-Oct-2022 07:19:02 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[30-Oct-2022 07:19:02 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[30-Oct-2022 07:19:02 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[17-Nov-2022 15:28:22 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[17-Nov-2022 15:28:22 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[17-Nov-2022 15:28:22 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[23-Nov-2022 14:38:47 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[23-Nov-2022 14:38:47 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[23-Nov-2022 14:38:47 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[23-Nov-2022 14:38:53 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[23-Nov-2022 14:38:53 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[23-Nov-2022 14:38:53 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Nov-2022 17:34:34 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[24-Nov-2022 17:34:34 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[24-Nov-2022 17:34:34 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[28-Nov-2022 17:01:51 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[28-Nov-2022 17:01:51 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[28-Nov-2022 17:01:51 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[03-Dec-2022 17:32:35 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[03-Dec-2022 17:32:35 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[03-Dec-2022 17:32:35 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[14-Dec-2022 17:09:31 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[14-Dec-2022 17:09:31 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[14-Dec-2022 17:09:31 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[15-Dec-2022 16:29:49 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[15-Dec-2022 16:29:49 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[15-Dec-2022 16:29:49 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[15-Dec-2022 16:29:56 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[15-Dec-2022 16:29:56 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[15-Dec-2022 16:29:56 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[15-Dec-2022 16:29:56 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[15-Dec-2022 16:29:56 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[15-Dec-2022 16:29:56 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Dec-2022 07:18:08 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[24-Dec-2022 07:18:08 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[24-Dec-2022 07:18:08 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Dec-2022 07:18:08 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[24-Dec-2022 07:18:08 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[24-Dec-2022 07:18:08 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Dec-2022 07:18:12 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[24-Dec-2022 07:18:12 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[24-Dec-2022 07:18:12 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[26-Dec-2022 15:59:27 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[26-Dec-2022 15:59:27 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[26-Dec-2022 15:59:27 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[26-Dec-2022 15:59:28 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[26-Dec-2022 15:59:28 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[26-Dec-2022 15:59:28 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[26-Dec-2022 15:59:31 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[26-Dec-2022 15:59:31 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[26-Dec-2022 15:59:31 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[27-Dec-2022 12:32:13 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[27-Dec-2022 12:32:13 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[27-Dec-2022 12:32:13 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[29-Dec-2022 17:16:53 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[29-Dec-2022 17:16:53 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[29-Dec-2022 17:16:53 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[30-Dec-2022 15:07:25 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[30-Dec-2022 15:07:25 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[30-Dec-2022 15:07:25 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[30-Dec-2022 15:07:25 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[30-Dec-2022 15:07:25 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[30-Dec-2022 15:07:25 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[03-Jan-2023 17:00:09 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[03-Jan-2023 17:00:09 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[03-Jan-2023 17:00:09 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[04-Jan-2023 10:15:51 UTC] PHP Warning:  include(/home2/fog17074/public_html/kathination/app/Http/Kernel.php): Failed to open stream: No such file or directory in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[04-Jan-2023 10:15:51 UTC] PHP Warning:  include(): Failed opening '/home2/fog17074/public_html/kathination/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home2/fog17074/public_html/kathination/vendor/composer/ClassLoader.php on line 571
+[04-Jan-2023 10:15:51 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#10 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home2/fog17074/public_html/kathination/public/index.php(49): Illuminate\Foundation\Application->make()
+#9 /home2/fog17074/public_html/kathination/index.php(21): require_once('/home2/fog17074...')
+#10 {main}
+  thrown in /home2/fog17074/public_html/kathination/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[04-Jan-2023 19:17:19 Asia/Kolkata] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home2/fog17074/public_html/kathination/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/Supervisor.php on line 110
+[04-Jan-2023 19:18:24 Asia/Kolkata] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home2/fog17074/public_html/kathination/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Spreadsheet.php on line 1153

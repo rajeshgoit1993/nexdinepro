@@ -1,0 +1,43 @@
+{!! Form::open(["files"=>true,'id'=>'update_holiday'])!!}
+<input type="hidden" name="id" value="{{$data->id}}">
+
+<!-- Modal content-->
+<div class="">
+
+<div class="modal-body">
+<div class="form-group">
+<label for="" class="required">Date</label>
+<input type="date" name="date" required class="form-control" value="{{$data->date}}">
+</div>
+
+<div class="form-group">
+<label for="" class="required">Holiday</label>
+<input type="text" name="holiday" required class="form-control" value="{{$data->holiday}}">
+</div>
+
+<div class="form-group">
+<label for="" class="required">Holiday Type</label>
+<select class="form-control" name="holiday_type" required>   
+ 
+ <option value="1" @if($data->holiday_type=='1') selected @endif>Company Holiday</option>
+ <option value="2" @if($data->holiday_type=='2') selected @endif>Optional Holiday</option>
+ <option value="3" @if($data->holiday_type=='3') selected @endif>National Holiday</option>
+ <option value="4" @if($data->holiday_type=='4') selected @endif>Leaving early at 05:00 PM</option>
+  <option value="5" @if($data->holiday_type=='5') selected @endif>Late Coming at 11:30 AM</option>
+
+</select>
+</div>
+
+
+
+
+
+</div>
+<div class="modal-footer" style="text-align: left;">
+{!! Form::submit('Save',["class"=>"btn btn-success"]) !!}
+
+</div>
+</div>
+
+
+{!! Form::close() !!}

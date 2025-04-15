@@ -1,0 +1,199 @@
+
+
+
+  public function get_region_wise_data(Request $request)
+    {
+       $region=$request->region;
+       if($region==0)
+       {
+        $data=DB::table('users')
+         ->join('fanchise_registrations','fanchise_registrations.fanchise_id' , '=', 'users.id')
+         ->join('brands','brands.id' , '=', 'fanchise_registrations.brands')
+         ->whereIn('users.registration_level',[2,1])
+         ->where([['users.status','=',7],['users.active_status','=',1]])
+         ->orderBy('brands.brand') 
+         ->select('users.*','fanchise_registrations.brands')  
+        ->get();
+
+        $cities=User::whereIn('registration_level',[2,1])
+            ->where([['status','=',7],['active_status','=',1]])->orderBy('dist')->get()->unique('dist')->pluck('dist');
+
+
+       }   
+       else
+       {
+           $region_ids=POS_SettingHelpers::get_region_ids($region);
+           $data=DB::table('users')
+         ->join('fanchise_registrations','fanchise_registrations.fanchise_id' , '=', 'users.id')
+         ->join('brands','brands.id' , '=', 'fanchise_registrations.brands')
+         ->whereIn('users.id',$region_ids)
+       
+         ->orderBy('brands.brand') 
+         ->select('users.*','fanchise_registrations.brands')  
+        ->get();
+
+        $cities=User::whereIn('registration_level',[2,1])
+            ->whereIn('users.id',$region_ids)->orderBy('dist')->get()->unique('dist')->pluck('dist');
+
+
+
+       }
+ 
+       $output_city='<option value="0">All</option>';
+        foreach($cities as $city):
+     $output_city.='<option value="'.$city.'">'.$city.'</option>';
+        endforeach;
+
+       $output_outlet='<option value="0">All</option>';
+        foreach($data as $datas):
+
+     $check=DB::table('franchise_sales')->where('outlet_id',$datas->id)->get();
+    if(count($check)>0):
+    $style='style="background:green;color:white"'; 
+   else:
+    $style='';
+    endif;
+     $output_outlet.='<option value="'.$datas->id.'" '.$style.'>'.CustomHelpers::get_brand_name(POS_SettingHelpers::get_brand_by_admin_id($datas->id)).'&nbsp;('.$datas->city.')&nbsp;'.$datas->name.'</option>';
+     endforeach;
+   $output=['output_city'=>$output_city,'output_outlet'=>$output_outlet];
+
+      return $output;
+    }
+    public function get_city_wise_outlet(Request $request)
+    {
+       $city=$request->city;
+       $region=$request->region;
+        if($region==0 && $city==0) 
+        {
+        $data=DB::table('users')
+         ->join('fanchise_registrations','fanchise_registrations.fanchise_id' , '=', 'users.id')
+         ->join('brands','brands.id' , '=', 'fanchise_registrations.brands')
+         ->whereIn('users.registration_level',[2,1])
+         ->where([['users.status','=',7],['users.active_status','=',1]])
+         ->orderBy('brands.brand') 
+         ->select('users.*','fanchise_registrations.brands')  
+        ->get();
+
+        }
+        elseif($region==0 && $city!=0)
+        {
+        $data=DB::table('users')
+         ->join('fanchise_registrations','fanchise_registrations.fanchise_id' , '=', 'users.id')
+         ->join('brands','brands.id' , '=', 'fanchise_registrations.brands')
+         ->whereIn('users.registration_level',[2,1])
+         ->where([['users.status','=',7],['users.active_status','=',1],['users.dist','=',$city]])
+         ->orderBy('brands.brand') 
+         ->select('users.*','fanchise_registrations.brands')  
+        ->get();
+        }
+        elseif($region!=0 && $city==0)
+        {
+        $region_ids=POS_SettingHelpers::get_region_ids($region);
+
+           $data=DB::table('users')
+         ->join('fanchise_registrations','fanchise_registrations.fanchise_id' , '=', 'users.id')
+         ->join('brands','brands.id' , '=', 'fanchise_registrations.brands')
+         ->whereIn('users.id',$region_ids)
+         ->where([['users.status','=',7],['users.active_status','=',1]])
+         ->orderBy('brands.brand') 
+         ->select('users.*','fanchise_registrations.brands')  
+        ->get();
+        }
+        elseif($region!=0 && $city!=0)
+        {
+          $region_ids=POS_SettingHelpers::get_region_ids($region);
+
+           $data=DB::table('users')
+         ->join('fanchise_registrations','fanchise_registrations.fanchise_id' , '=', 'users.id')
+         ->join('brands','brands.id' , '=', 'fanchise_registrations.brands')
+         ->whereIn('users.registration_level',[2,1])
+         ->whereIn('users.id',$region_ids)
+         ->where([['users.status','=',7],['users.active_status','=',1],['users.dist','=',$city]])
+         ->orderBy('brands.brand') 
+         ->select('users.*','fanchise_registrations.brands')  
+        ->get();
+        }
+    
+       $output='<option value="0">All</option>';
+        foreach($data as $datas):
+
+     $check=DB::table('franchise_sales')->where('outlet_id',$datas->id)->get();
+    if(count($check)>0):
+    $style='style="background:green;color:white"'; 
+   else:
+    $style='';
+    endif;
+     $output.='<option value="'.$datas->id.'" '.$style.'>'.CustomHelpers::get_brand_name(POS_SettingHelpers::get_brand_by_admin_id($datas->id)).'&nbsp;('.$datas->city.')&nbsp;'.$datas->name.'</option>';
+     endforeach;
+
+     echo $output;
+    }
+  
+     if($region==0 && $city==0 && $outlet_id==0):  
+        elseif($region!=0 && $city==0 && $outlet_id==0):
+        elseif($region==0 && $city!=0 && $outlet_id==0):
+        elseif($region==0 && $city==0 && $outlet_id!=0):
+        elseif($region!=0 && $city!=0 && $outlet_id==0):
+        elseif($region!=0 && $city==0 && $outlet_id!=0):
+        elseif($region==0 && $city!=0 && $outlet_id!=0):
+        elseif($region!=0 && $city!=0 && $outlet_id!=0):
+        endif;
+
+
+
+$data = DB::table('franchise_sales')
+                  ->where([['del_status', 'Live'],['franchise_sales.order_status',3]]) 
+                 ->whereDate('franchise_sales.sale_date','2023-01-01')
+                 ->whereBetween('franchise_sales.order_time',['00:00','01:00'])
+                 ->select(DB::raw('count(*) as count, HOUR(order_time) as hour'))
+                 ->groupBy('hour')
+                 ->get();
+      
+       $test_data=DB::table('franchise_sales')->whereIn('outlet_id',$data_dine_outlet_ids)->get();
+        dd($data);
+
+
+         $region_ids=POS_SettingHelpers::get_region_ids($region);  
+         $ids=User::whereIn('registration_level',[2,1])
+            ->where([['status','=',7],['active_status','=',1]])->get()->pluck('id'); 
+       $data = DB::table('franchise_sales')
+                  ->where([['del_status', 'Live'],['franchise_sales.order_status',3]]) 
+                 ->whereBetween('franchise_sales.sale_date', [$from, $to])
+                 ->whereIn('outlet_id',$region_ids)
+                 ->get();  
+            
+        $void = DB::table('franchise_sales')
+                  ->where([['del_status', 'Del'],['franchise_sales.order_status',3]]) 
+                 ->whereBetween('franchise_sales.sale_date', [$from, $to])
+                 ->whereIn('outlet_id',$region_ids)
+                 ->get();
+        $heading='All cities & all outlet between dates & selected region';
+        $ids_second=$region_ids;
+        $pdf=PDF::loadView('report.pos.combine.getdsr_mtd',compact('data','from','to','void','heading','ids_second'));
+        return $pdf->stream('combime_DSR_MTD.pdf'); 
+
+
+
+
+        $region_ids=POS_SettingHelpers::get_region_ids($region);  
+             $ids=User::whereIn('registration_level',[2,1])
+            ->where([['status','=',7],['active_status','=',1],['dist','=',$city]])->whereIn('id',$region_ids)->get()->pluck('id'); 
+           
+         
+           
+         $data = DB::table('franchise_sales')
+                 ->where([['del_status', 'Live'],['franchise_sales.order_status',3]]) 
+                 ->whereIn('outlet_id',$ids)
+                  
+                 ->whereBetween('franchise_sales.sale_date', [$from, $to])
+                 ->get();  
+            
+          $void = DB::table('franchise_sales')
+                 ->where([['del_status', 'Del'],['franchise_sales.order_status',3]]) 
+                 ->whereIn('outlet_id',$ids)
+                  
+                 ->whereBetween('franchise_sales.sale_date', [$from, $to])
+                 ->get();
+             $ids_second=$ids;   
+
+             
