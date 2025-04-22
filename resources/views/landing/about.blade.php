@@ -32,7 +32,7 @@
 
 										<div class="well well-small" style="text-align:left">
 
-											<h3><b>NexCen POS</b></h3>
+											<h3><b>NexDine Pro</b></h3>
 
 											<p><img src="{{url('resources/assets/front')}}/themes/images/about-us.jpg" alt="About NexCen POS" /></p>
 

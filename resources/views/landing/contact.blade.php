@@ -24,21 +24,18 @@
 
 						<div class="span4">
 
-
+ 
 
 							<h2>  Mailing Address </h2>	
 							<hr>
-							<h3>New Jersey</h3>
-							25 Lucille Court <br/>
-							EDISON NJ - 08820<br/>	
+							<h3>Atlanta</h3>
+							11555 Medlock Bridge Rd Suite 100,<br/>
+							 Johns Creek, GA 30097<br/>	
 
 							<h3>Delhi/NCR</h3>
 							A-60, LGF - 06, <br/>
-							 Sector 2, Noida 201301, UP<br/>
+							 Sector 2, Noida 201301, UP<br/><br/><br/><br/>
 
-							<h3>Bangalore</h3>
-							D/203, Reliable Acacia Near Sun City,<br/>
-							Iblur Outer Ring Road, Bangalore - 560103 <br/><br/>
 						</div>
 
  
@@ -62,8 +59,6 @@
 
 							Tel: <a href="tel:+17408073034">+1 (740) 807-3034</a><br/>
 							<a href="tel:+919717522463">+91-97175 22463</a><br/>
-							<a href="tel:+911204115844">+91-120-411 5844</a><br/>
-
 							
 
 
@@ -82,7 +77,7 @@
 
 
 
-							Email: <a href="mailto:info@nexcenglobal.com" target="_top">info@nexcenglobal.com</a><br/>
+							Email: <a href="mailto:info@nexcenglobal.com" target="_top">info@nexdinepro.com</a><br/>
 
 
 

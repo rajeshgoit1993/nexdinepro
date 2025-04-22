@@ -1013,9 +1013,9 @@ $avl_fund=CustomHelpers::get_franchise_previous_credit_bal($row->id);
         
 
  <a href="#" class="edit" id="'.CustomHelpers::custom_encrypt($row->id).'"><button style="display:inline-block;margin-top:5px;width:100%"  class="btn btn-info btn-sm"><span class="fa fa-edit"></span> Edit</button></a>
-<a href="#">  <button type="button" style="display:inline-block;margin-top:5px;width:100%" class="btn btn-success btn-sm open_page" id="'.CustomHelpers::custom_encrypt($row->id).'">
+<!--<a href="#">  <button type="button" style="display:inline-block;margin-top:5px;width:100%" class="btn btn-success btn-sm open_page" id="'.CustomHelpers::custom_encrypt($row->id).'">
                  <span class="fa fa-cog"></span> Menu Item
-                  </button></a>';
+                  </button></a>-->';
  if(Sentinel::getUser()->inRole('superadmin')):
  $actionBtn.= '<a href="#" class="change_password"  id="'.CustomHelpers::custom_encrypt($row->id).'"><button class="btn btn-danger btn-sm" style="display:inline-block;margin-top:5px;width:100%"><span class="fas fa-key"></span> Change Password</button></a>
 

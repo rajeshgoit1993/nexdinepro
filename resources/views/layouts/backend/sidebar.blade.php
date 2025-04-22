@@ -3,7 +3,9 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link" style="background:white">
-      <img src="{{url('public/uploads/logo/left.png')}}" alt="AdminLTE Logo" class="brand-image  elevation-3" >
+      <img src="{{url('public/uploads/logo/left.png')}}" alt="AdminLTE Logo" class="brand-image  elevation-3" 
+style="box-shadow: none !important;" 
+      >
       <span class="brand-text font-weight-light">
  
  <?php  
@@ -14,8 +16,10 @@ $logo_path=CustomHelpers::logo_path(Sentinel::getUser()->parent_id);
 
     <img src="{{$logo_path}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="float: none;
     border-radius: 2px;
-    max-height: 40px;
-    width:70%;
+    box-shadow: none !important;
+    margin-left: 0px;
+/*    max-height: 40px;*/
+   
    
    
 ">
@@ -73,7 +77,7 @@ $logo_path=CustomHelpers::logo_path(Sentinel::getUser()->parent_id);
               </p>
             </a>
           </li> 
-         <li class="nav-item ">
+       <!--   <li class="nav-item ">
      <a href="{{URL::route('franchise_exp')}}" class="nav-link {{ Request::is('Franchise-Exp')
 
 ? 'active' :'' }}">
@@ -83,7 +87,7 @@ $logo_path=CustomHelpers::logo_path(Sentinel::getUser()->parent_id);
                
               </p>
             </a>
-          </li> 
+          </li>  -->
 
 
         

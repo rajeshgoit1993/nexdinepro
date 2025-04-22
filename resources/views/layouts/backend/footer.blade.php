@@ -1,7 +1,7 @@
 
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; {{date('Y')}} <a href="#">NexCen POS </a>.</strong>
+    <strong>Copyright &copy; {{date('Y')}} <a href="#">NexDine Pro </a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
        <strong>Design & Develop By <a href="https://www.nexcenglobal.com/" target="_blank">NexCen Global INC</a>.</strong>

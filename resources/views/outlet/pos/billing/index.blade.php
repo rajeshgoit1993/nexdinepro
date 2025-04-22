@@ -639,7 +639,7 @@ value="">
     <ul class="icon__menu">
     <li>
    <a href="#" class="brand-link" style="background:white;color: white;">
-      <img src="{{url('public/uploads/logo/sklogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" >
+      <!-- <img src="{{url('public/uploads/logo/sklogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" > -->
       <span class="brand-text font-weight-light">
  
  <?php  

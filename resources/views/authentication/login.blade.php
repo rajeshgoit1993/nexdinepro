@@ -52,7 +52,7 @@
   <div class="login-box-body" >
     <div class="login_form_new" style="padding: 20px 50px">
     <div class="login-logo">
-      <b style="color: white">NexCen POS </b>
+      <b style="color: white">NexDine Pro </b>
     </div>
     <hr>
     @if(session('error'))

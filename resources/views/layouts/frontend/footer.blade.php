@@ -8,44 +8,35 @@
 <div class="container">
 	<footer class="footer well well-small">
 		<div class="row-fluid">
-			<div class="span3">
+			<div class="span4">
 				<h4>Quick Links</h4>
 				<ul class="media-list">	
-					<li><a href="index.html"><i class="icon-home"></i>Home</a></li>
-					<li><a href="company.html"><i class="icon-info-sign"></i>About Us</a></li>
+					<li><a href="{{url('/')}}"><i class="icon-home"></i>Home</a></li>
+					<!-- <li><a href="{{route('about')}}"><i class="icon-info-sign"></i>About Us</a></li> -->
 				<!-- 	<li><a href="#"><i class="icon-question-sign"></i>Clients</a></li>  
 					<li><a href="#"><i class="icon-cogs"></i>Downloads</a><br/></li> -->
 						<li><a href="#"><i class="icon-envelope-alt"></i>Support</a></li><br/>
 					</ul>
 				</div>
-				<div class="span3">
+				<div class="span4">
 					<h4>Products</h4>
 					<ul class="media-list">	
-						<li><a href="products/restaurant-billing-software.html"><i class="icon-cogs"></i>NexCen POS</a><br/>
-							<li><a href="products/qsr-software.html"><i class="icon-cogs"></i>NexCen QSR</a><br/>
-							<li><a href="products/restaurant-inventory-software.html"><i class="icon-cogs"></i>NexCen MMS</a><br/>
+						<li><a href="{{route('pos_front')}}"><i class="icon-cogs"></i>NexDine POS</a><br/>
+							<li><a href="{{route('qsr')}}"><i class="icon-cogs"></i>NexDine QSR</a><br/>
+							<li><a href="{{route('mms')}}"><i class="icon-cogs"></i>NexDine MMS</a><br/>
 								<!-- <li><a href="#"><i class="icon-cogs"></i>NexCen Base-Kitchen</a><br/>
 									<li><a href="#"><i class="icon-cogs"></i>NexCen Catering</a><br/>
 										<li><a href="#"><i class="icon-cogs"></i>NexCen Food-Court</a><br/> -->
 										</ul>
 									</div>
 
-									<div class="span3">
-										<h4>Visit us</h4>
-										<address style="margin-bottom:15px;">
-											<strong><a href="#" title="Address"><i class=" icon-home"></i> NexCen IT Services PVT. LTD. </a></strong><br>
-											A-60, LGF - 06 Sector 2, Noida
-201301, UP
-Delhi/NCR
-										</address>
-
-									</div>
-									<div class="span3">
+									
+									<div class="span4">
 										<h4>Contact us</h4>
 
-										Phone: <i class="icon-phone-sign"></i> &nbsp; +91-120-411 5844 <br>
-										Email: <a href="#" title="contact"><i class="icon-envelope-alt"></i> info@nexcenglobal.com</a><br/>
-										Link: <a href="#" title="Website"><i class="icon-globe"></i> nexcenpos.com</a><br/><br/>
+										Phone: <i class="icon-phone-sign"></i> &nbsp; +91-97175 22463 <br>
+										Email: <a href="#" title="contact"><i class="icon-envelope-alt"></i> info@nexdinepro.com</a><br/>
+										Link: <a href="https://nexdinepro.com/" title="Website"><i class="icon-globe"></i> nexdinepro.com</a><br/><br/>
 
 									</div><!-- /container -->
 								</section>
